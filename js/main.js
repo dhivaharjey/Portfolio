@@ -13,8 +13,8 @@ const downloadResume = document.querySelectorAll(".resume");
 
 downloadResume.forEach((button) => {
   const a = document.createElement("a");
-  a.href = "/assets/DHIVAHAR_res.pdf";
-  a.download = "Resume.pdf";
+  a.href = "/assets/DHIVAHAR_ATS_RES.pdf";
+  a.download = "DHIVAHAR_RESUME.pdf";
   a.style.display = "none";
   button.addEventListener("click", function () {
     document.body.appendChild(a);
@@ -27,7 +27,7 @@ downloadResume.forEach((button) => {
 
 const openResume = document.getElementById("openResume");
 openResume.addEventListener("click", function () {
-  fileUrl = "/assets/DHIVAHAR_res.pdf";
+  fileUrl = "/assets/DHIVAHAR_ATS_RES.pdf";
   window.open(fileUrl, "_blank");
 });
 

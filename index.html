@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/page-logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!-------------- CSS----------------->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-------------- FAV ICON----------------->
+    <link rel="icon" href="" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portfolio</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "R-gMXpp7uprOB19r8",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!---------- HEADER ----------->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Dhivahar</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <!-- <div class="circle"></div> -->
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <!-- <div class="circle"></div> -->
+            </li>
+            <li class="nav_list">
+              <a href="#skills" class="nav-link">Skills</a>
+              <!-- <div class="circle"></div> -->
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <!-- <div class="circle"></div> -->
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <!-- <div class="circle"></div> -->
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <!-- <a href="assets/Resume.pdf" download="Resume"> -->
+          <button class="btn resume">
+            RESUME
+            <i class="uil uil-import"></i>
+          </button>
+          <!-- </a> -->
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-------------------- MAIN ---------------------------->
+      <main class="wrapper">
+        <!-------------------- FEATURED BOX ---------------------------->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Dhivahar J</span>
+            </div>
+            <div class="featured-name">
+              <p>
+                I'm
+                <span class="typedText"></span>
+              </p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                MERN Stack Developer with a passion for creating visually
+                stunning and user-friendly websites
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <!-- <button class="btn blue-btn">Hire Me</button> -->
+              <button class="btn" id="openResume">
+                VIEW CV
+                <i class="uil uil-file-alt"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <!-- <div class="icon"><i class="uil uil-instagram"></i></div> -->
+              <div class="icon">
+                <a
+                  href="https://www.linkedin.com/in/dhivahar-j-300856194"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <!-- <i class="uil uil-linkedin-alt"></i> -->
+                  <i
+                    class="fa-brands fa-linkedin fa-2x"
+                    style="color: rgb(58, 94, 239)"
+                  ></i>
+                </a>
+              </div>
+              <!-- <div class="icon"><i class="uil uil-dribbble"></i></div> -->
+              <div class="icon">
+                <a
+                  href="https://github.com/dhivaharjey"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <!-- <i class="uil uil-github-alt"></i> -->
+                  <i class="fa-brands fa-github fa-2x" style="color: black"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="assets/images/front-page.jpg" alt="avatar" />
+            </div>
+          </div>
+          <!-- <div class="scroll-icon-box">
+            <a href="#contact" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              Scroll Down
+            </a>
+          </div> -->
+          <!-- SCROLL TO TOP BUTTON -->
+          <div class="scroll-to-top">
+            <!-- <button> -->
+            <a href="#home" class="scroll-top-icon">
+              <i class="uil uil-angle-up"></i>
+            </a>
+            <!-- </button> -->
+          </div>
+        </section>
+        <!-------------------- ABOUT ---------------------------->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My Introduction</h3>
+                <p>
+                  I have successfully developed and deployed a wide range of
+                  dynamic web applications that prioritize both functionality
+                  and user experience.I am confident that my technical skills,
+                  combined with my passion for continuous learning, make me a
+                  strong fit for your team. I would love the opportunity to
+                  further discuss how I can contribute to your company continued
+                  success.
+                </p>
+                <div class="about-btn">
+                  <!-- <a href="assets/Resume.pdf" download="Resume"> -->
+                  <button class="btn resume">
+                    Download Cv
+                    <i class="uil uil-import"></i>
+                  </button>
+                  <!-- </a> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Front End</h3>
+                </div>
+                <div class="skills-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>ReactJs</span>
+                  <span>Material UI</span>
+                  <span>Bootstrap</span>
+                  <span>Git</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Back-End</h3>
+                </div>
+                <div class="skills-list">
+                  <span>NodeJs</span>
+                  <span>ExpressJs</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>DataBase</h3>
+                </div>
+                <div class="skills-list">
+                  <span>MongoDb</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
+
+        <!-------------------- SKILLS BOX---------------------------->
+        <section class="section" id="skills">
+          <div class="top-header">
+            <h1>Skills</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="skills-box skills-frontEnd">
+                <div class="skills-header">
+                  <h3>Front End</h3>
+                </div>
+                <div class="skills-list">
+                  <span>
+                    <img src="assets/images/html-5.png" alt="HTML LOGO" />
+                  </span>
+                  <span>
+                    <img src="assets/images/css-3_5968242.png" alt="Css LOGO" />
+                  </span>
+                  <span>
+                    <img src="assets/images/js_5968292.png" alt="js LOGO" />
+                  </span>
+                  <span>
+                    <img
+                      src="assets/images/React-Logo-PNG-Pic.png"
+                      alt="React LOGO"
+                    />
+                  </span>
+                  <span>
+                    <img src="assets/images/github.png" alt="Github LOGO" />
+                  </span>
+                  <span>
+                    <img
+                      src="assets/images/bootstrap.png"
+                      alt="bootstrap LOGO"
+                    />
+                  </span>
+                  <span>
+                    <img src="assets/images/Mui.png" alt="Mui LOGO" />
+                  </span>
+                  <span>
+                    <img
+                      src="assets/images/Chakra UI.png"
+                      alt="Chakra UI LOGO"
+                    />
+                  </span>
+                  <!-- <span>
+                    <i class="fa-brands fa-html5 fa-7x"></i>
+                  </span>
+                  <span><i class="fa-brands fa-css3-alt fa-7x"></i></span>
+                  <span>
+                    <i class="fa-brands fa-square-js fa-7x"></i>
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-react fa-flip-both fa-7x"></i>
+                  </span>
+                  <span>Material UI</span>
+                  <span><i class="fa-brands fa-bootstrap fa-7x"></i></span> -->
+
+                  <!-- <span><i class="fa-brands fa-github fa-7x"></i></span> -->
+                </div>
+              </div>
+
+              <div class="skills-box skills-backEnd">
+                <div class="skills-header">
+                  <h3>Back-End</h3>
+                </div>
+                <div class="skills-list">
+                  <span>
+                    <img
+                      src="assets/images/node js logo.png"
+                      alt="nodejs logo"
+                    />
+                  </span>
+                  <span><img src="assets/images/express.png" alt="" /></span>
+                </div>
+              </div>
+              <div class="skills-box skills-dataBase">
+                <div class="skills-header">
+                  <h3>DataBase</h3>
+                </div>
+                <div class="skills-list">
+                  <span>
+                    <img src="assets/images/mongodb.png" alt="MongoDb" />
+                  </span>
+                  <span><img src="assets/images/mysql-icon.png" alt="" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------------------- PROJECT BOX---------------------------->
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+              <div class="bg-image"></div>
+              <h3>Cart Page</h3>
+              <!-- <img src="/assets/images/gmail-icon.png" alt="Gmail image" /> -->
+
+              <div class="icon-link-box">
+                <a
+                  class="icon-links"
+                  href="https://github.com/dhivaharjey/cart_page_useReducer.git"
+                  target="_blank"
+                >
+                  <i class="uil uil-github"></i>
+                </a>
+
+                <a
+                  class="icon-links"
+                  href="https://jd-cart-page-app.netlify.app"
+                  target="_blank"
+                >
+                  <i class="uil uil-react"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="bg-image"></div>
+              <h3>Gmail Clone</h3>
+              <!-- <img src="/assets/images/gmail-icon.png" alt="Gmail image" /> -->
+
+              <div class="icon-link-box">
+                <a
+                  class="icon-links"
+                  href="https://github.com/dhivaharjey/gmail_clone_front_end.git"
+                  target="_blank"
+                >
+                  <i class="uil uil-github"></i>
+                </a>
+
+                <a
+                  class="icon-links"
+                  href="https://jd-react-gmail-clone-app.netlify.app"
+                  target="_blank"
+                >
+                  <i class="uil uil-react"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <div class="bg-image"></div>
+              <!-- <img src="/assets/images/gmail-icon.png" alt="Gmail image" /> -->
+              <h3>Chat App</h3>
+              <div class="icon-link-box">
+                <a
+                  class="icon-links"
+                  href="https://github.com/dhivaharjey/Chat_App_frontend.git"
+                  target="_blank"
+                >
+                  <i class="uil uil-github"></i>
+                </a>
+
+                <a
+                  class="icon-links"
+                  href="https://jd-chat-app.netlify.app"
+                  target="_blank"
+                >
+                  <i class="uil uil-react"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------------------- CONTACT BOX---------------------------->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind,contact me</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>
+                  Find Me
+                  <i class="uil uil-corner-right-down"></i>
+                </h2>
+                <p>
+                  <i class="uil uil-envelope"></i>
+                  <a
+                    href="mailto:dhivahar19399@gamil.com"
+                    style="text-decoration: none"
+                  >
+                    dhivahar19399@gamil.com
+                  </a>
+                </p>
+                <p>
+                  <i class="uil uil-phone"></i>
+                  89657858578
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <form id="contactForm">
+                <div class="form-control">
+                  <div class="form-inputs">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="input-field"
+                      placeholder="Name"
+                    />
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      class="input-field"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="subject">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="input-field"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="text-area">
+                    <textarea
+                      name=""
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="form-button">
+                    <button type="submit" class="btn">
+                      Send
+                      <i class="uil uil-message"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!---------------------------------- FOOTETR ---------------->
+      <footer>
+        <div class="top-footer"><p>Dhiavahar</p></div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><i class="uil uil-instagram"></i></div>
+          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+          <div class="icon"><i class="uil uil-dribbble"></i></div>
+          <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">Dhivahar J</a>
+          - ALL rights reserved
+        </div>
+      </footer>
+    </div>
+    <!-------------- TYPING JS LINK----------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-------------- SCROLL REVEAL JS LINK ----------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-------------- MAIN JS----------------->
+    <script src="js/main.js"></script>
+  </body>
+</html>

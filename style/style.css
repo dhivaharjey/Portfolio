@@ -450,7 +450,7 @@ h3 {
   height: 2500px;
   background: url("/assets/images/cart-page.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   /* box-shadow: 0 -65px 70px 85px rgba(0, 0, 0, 0.4) inset; */
   transition: all 0.5s;

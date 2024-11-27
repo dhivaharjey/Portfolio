@@ -207,14 +207,23 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", sendMail);
 function sendMail(event) {
   event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+  if (!name || !email || !subject) {
+    alert("Please Fill Name,Email,Subject");
+    return;
+  }
   const payload = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
   };
   const service_id = "service_xrhrsrp";
   const template_id = "template_7g0j5xh";
+
   emailjs.send(service_id, template_id, payload).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
